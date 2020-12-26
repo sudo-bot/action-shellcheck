@@ -1,0 +1,12 @@
+name: run shellcheck
+on: [push]
+
+jobs:
+    check:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v2
+            - name: run shellcheck
+              uses: sudo-bot/action-shellcheck@latest
+              with:
+                  cli-args: "tests/script.sh"

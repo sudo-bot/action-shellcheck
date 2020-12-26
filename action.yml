@@ -1,0 +1,17 @@
+name: "shellcheck"
+author: williamdes
+description: "Use ShellCheck without having to install it"
+inputs:
+    cli-args:
+        description: "Command line arguments"
+        required: true
+
+branding:
+    icon: "check-circle"
+    color: purple
+runs:
+    using: "docker"
+    image: "docker://koalaman/shellcheck:latest"
+    args:
+        - shellcheck
+        - ${{ inputs.cli-args }}
