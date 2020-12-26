@@ -11,6 +11,6 @@ branding:
     color: purple
 runs:
     using: "docker"
-    image: "docker://botsudo/shellcheck:latest"
+    image: "docker://botsudo/action-shellcheck:latest"
     args:
         - ${{ inputs.cli-args }}

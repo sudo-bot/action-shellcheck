@@ -22,3 +22,14 @@ This action has `make` and `bash`.
         # https://github.com/koalaman/shellcheck#how-to-use
         cli-args: "myscript"
 ```
+
+## Advanced usage
+
+```yml
+  - uses: actions/checkout@v2
+  - name: run shellcheck
+    uses: sudo-bot/action-shellcheck@latest
+    with:
+        # https://github.com/koalaman/shellcheck#how-to-use
+        cli-args: "--format=checkstyle --severity=info script.sh"
+```
