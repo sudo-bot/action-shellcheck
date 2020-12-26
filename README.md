@@ -2,7 +2,7 @@
 
 Go to [ShellCheck](https://github.com/koalaman/shellcheck#readme) at GitHub
 
-You can find the image on [Docker Hub](https://hub.docker.com/r/botsudo/action-doctum)
+You can find the image on [Docker Hub](https://hub.docker.com/r/botsudo/action-shellcheck)
 
 [![Docker Pulls](https://img.shields.io/docker/pulls/botsudo/action-shellcheck.svg)](https://hub.docker.com/r/botsudo/action-shellcheck)
 
