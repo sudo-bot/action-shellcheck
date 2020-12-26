@@ -1,0 +1,9 @@
+version: "3.3"
+
+services:
+    sut:
+        build: .
+        command: "--format=checkstyle --severity=info tests/script.sh"
+        volumes:
+          - ./tests:/tests:ro
+        working_dir: /tests

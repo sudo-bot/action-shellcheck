@@ -11,7 +11,6 @@ branding:
     color: purple
 runs:
     using: "docker"
-    image: "docker://koalaman/shellcheck:latest"
+    image: "docker://botsudo/shellcheck:latest"
     args:
-        - /bin/shellcheck
         - ${{ inputs.cli-args }}
