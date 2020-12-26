@@ -13,4 +13,4 @@ runs:
     using: "docker"
     image: "docker://koalaman/shellcheck:latest"
     args:
-        - ${{ inputs.cli-args }}
+        - "${{ inputs.cli-args }}"
