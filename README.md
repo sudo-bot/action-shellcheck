@@ -10,6 +10,8 @@ You can find the image on [Docker Hub](https://hub.docker.com/r/botsudo/action-s
 
 I use the base image [koalaman/shellcheck](https://hub.docker.com/r/koalaman/shellcheck) for this action
 
+This action has `make` and `bash`.
+
 ## Example usage
 
 ```yml
