@@ -6,8 +6,8 @@
 
 set -e
 
-CLI_ARGS="$1"
+CLI_ARGS="$@"
 
 echo "::debug CLI_ARGS: ${CLI_ARGS}"
 
-/bin/shellcheck ${CLI_ARGS} 2>&1
+shellcheck ${CLI_ARGS} 2>&1
