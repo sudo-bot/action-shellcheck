@@ -1,4 +1,4 @@
-name: "shellcheck"
+name: "action-shellcheck"
 author: williamdes
 description: "Use ShellCheck without having to install it"
 inputs:
