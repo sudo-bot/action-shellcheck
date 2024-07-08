@@ -1,12 +1,20 @@
-name: Build docker image
+name: Build the docker image
+
+permissions:
+  contents: read
 
 on: [push]
 
 jobs:
     build-action:
+        name: Build the docker image
         runs-on: ubuntu-latest
         steps:
             - name: Checkout repository
               uses: actions/checkout@v4
             - name: Build action image
               run: make docker-build
+              env:
+                PLATFORM: linux/amd64
+                ACTION: load
+                PROGRESS_MODE: plain
