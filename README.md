@@ -15,7 +15,7 @@ This action has `make` and `bash`.
 ## Example usage
 
 ```yml
-  - uses: actions/checkout@v2
+  - uses: actions/checkout@v4
   - name: run shellcheck
     uses: sudo-bot/action-shellcheck@latest
     with:
@@ -26,7 +26,7 @@ This action has `make` and `bash`.
 ## Advanced usage
 
 ```yml
-  - uses: actions/checkout@v2
+  - uses: actions/checkout@v4
   - name: run shellcheck
     uses: sudo-bot/action-shellcheck@latest
     with:
