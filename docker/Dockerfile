@@ -6,7 +6,8 @@ ARG RELEASE_VERSION=latest
 ARG VCS_REF
 ARG BUILD_DATE
 
-RUN apk add --no-cache --update make bash
+RUN apk add --no-cache --update make bash \
+    && shellcheck --version
 
 COPY entrypoint.sh /entrypoint.sh
 
