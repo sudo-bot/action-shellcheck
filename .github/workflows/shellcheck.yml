@@ -14,3 +14,7 @@ jobs:
               uses: sudo-bot/action-shellcheck@latest
               with:
                   cli-args: "--format=checkstyle --severity=info docker/tests/script.sh"
+            - name: print shellcheck version
+              uses: sudo-bot/action-shellcheck@latest
+              with:
+                  cli-args: "--version"
